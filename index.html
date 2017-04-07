@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>Sugar</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Your styles should be called here -->
+        <link rel="stylesheet" type="text/css" href="main.css" />
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    </head>
+    <!-- <div class="decor"></div> -->
+    <div class="decor"></div>
+    <h1>Sugar, Sugar How You Get So High: <br />Calcuate How Much Sugar Is In Your Starbucks</h1>
+    <p class="byline"> by Robert Exley</p>
+    <div class="photo-container">
+        <img src="images/starbucks.jpg" id="photo1">
+    </div>
+    <div class="caption">
+        Millions of Americans go to Starbucks everday for coffee. <span class="credit">(Photo: Starbucks)</span>
+    </div>
+
+    <div class="main-text">
+
+        <body>
+            <!-- YOUR CONTENT GOES HERE -->
+            <p>With over 11,000 stores in the U.S. alone, millions of Americans turn to Starbucks everyday to get their morning boost, but some may not realize the amount of sugar hiding in their favorite drinks.
+            </p>
+
+            <p>While coffee and tea alone contain no sugar, many elect to add flavors and sweeteners that can come loaded with sugar. The biggest offenders are Frappuccino’s, some of which can exceed the daily recommendation in one serving.
+            </p>
+            <p>According to the American Heart Association, the daily-recommended sugar intake is 37.5 grams for men and 25 grams for women. The AHA identified “sugary drinks” as one of the largest contributors to rising levels of obesity in society. </p>
+    </div>
+
+    <div class="disclaimer">
+
+        *All numbers are based on a grande-sized drink,<br /> **Percentages are based on the AHA’s daily recommendations.
+
+    </div>
+
+    <div class="form_box">
+        <form>
+
+
+            <h2>Coffee</h2>
+
+            <select name="drink_coffee" id="drink_coffee">
+              <option selected value="Choose One" data-sugar="0">Choose One</option>
+               <option value="Blonde Roast" data-sugar="0">Blonde Roast</option>
+               <option value="Clover® Brewed Coffee" data-sugar="0">Clover® Brewed Coffee</option>
+               <option value="Pike Place® Roast" data-sugar="0">Pike Place® Roast</option>
+               <option value="Decaf Pike Place® Roast" data-sugar="0">Decaf Pike Place® Roast</option>
+               <option value="Featured Dark Roast" data-sugar="0">Featured Dark Roast</option>
+               <option value="Iced Coffee" data-sugar="0">Iced Coffee</option>
+               <option value="Nariño 70 Cold Brew" data-sugar="0">Nariño 70 Cold Brew</option>
+               <option value="Nariño 70 Cold Brew with Milk" data-sugar="0">Nariño 70 Cold Brew with Milk</option>
+               <option value="Nitro Cold Brew" data-sugar="0">Nitro Cold Brew</option>
+               <option value="Nitro Cold Brew with Sweet Cream" data-sugar="5">Nitro Cold Brew with Sweet Cream</option>
+               <option value="Vanilla Sweet Cream Cold Brew" data-sugar="14">Vanilla Sweet Cream Cold Brew</option>
+               <option value="Starbucks® Low Calorie Iced Coffee + Milk" data-sugar="8">Starbucks® Low Calorie Iced Coffee + Milk</option>
+               <option value="Starbucks® Caramel Iced Coffee" data-sugar="21">Starbucks® Caramel Iced Coffee</option>
+               <option value="Starbucks® Vanilla Iced Coffee" data-sugar="22">Starbucks® Vanilla Iced Coffee</option>
+ </select>
+        </form>
+
+
+        <form>
+            <h2>Espresso</h2>
+            <select name="drink_espresso" id="drink_espresso">
+                <option selected value="Choose One" data-sugar="0">Choose One</option>
+                   <option value="Cappuccino" data-sugar="12">Cappuccino</option>
+                   <option value="Caffè Latte" data-sugar="18">Caffè Latte</option>
+                   <option value="Coconutmilk Mocha Macchiato" data-sugar="32">Coconutmilk Mocha Macchiato</option>
+                   <option value="Cascara Latte" data-sugar="34">Cascara Latte</option>
+                   <option value="Caramel Macchiato" data-sugar="35">Caramel Macchiato</option>
+                   <option value="Cinnamon Almondmilk Macchiato" data-sugar="39">Cinnamon Almondmilk Macchiato</option>
+                   <option value="Cinnamon Dolce Latte" data-sugar="40">Cinnamon Dolce Latte</option>
+                   <option value="Caffè Mocha" data-sugar="42">Caffè Mocha</option>
+                   <option value="Caffè Americano" data-sugar="0">Caffè Americano</option>
+                   <option value="Espresso" data-sugar="0">Espresso</option>
+                   <option value="Starbucks Doubleshot® on Ice Beverage" data-sugar="5">Starbucks Doubleshot® on Ice Beverage</option>
+                   <option value="Iced Caffè Latte" data-sugar="13">Iced Caffè Latte</option>
+                   <option value="Flat White" data-sugar="18">Flat White</option>
+                   <option value="Latte Macchiato" data-sugar="19">Latte Macchiato</option>
+
+                   <option value="Iced Cascara Latte" data-sugar="29">Iced Cascara Latte</option>
+                   <option value="Iced Vanilla Latte" data-sugar="30">Iced Vanilla Latte</option>
+                   <option value="Iced Cinnamon Dolce Latte" data-sugar="34">Iced Cinnamon Dolce Latte</option>
+                   <option value="Iced Coconutmilk Mocha Macchiato" data-sugar="34">Iced Coconutmilk Mocha Macchiato</option>
+                   <option value="Iced Caffè Mocha" data-sugar="36">Iced Caffè Mocha</option>
+                   <option value="Vanilla Latte" data-sugar="37">Vanilla Latte</option>
+                   <option value="Iced Caramel Macchiato" data-sugar="37">Iced Caramel Macchiato</option>
+                   <option value="Iced Cinnamon Almondmilk Macchiato" data-sugar="40">Iced Cinnamon Almondmilk Macchiato</option>
+                   <option value="Iced White Chocolate Mocha" data-sugar="47">Iced White Chocolate Mocha</option>
+                   <option value="White Chocolate Mocha" data-sugar="53">White Chocolate Mocha</option>
+
+</select>
+        </form>
+
+        <form>
+            <h2>Frap</h2>
+            <select name="drink_frap" id="drink_frap">
+                    <option selected value="Choose One" data-sugar="0">Choose One</option>
+   <option value="Coffee Light Frappuccino® Blended Coffee" data-sugar="24">Coffee Light Frappuccino® Blended Coffee</option> -->
+   <option value="Double Chocolaty Chip Crème Frappuccino® Blended Crème" data-sugar="51">Double Chocolaty Chip Crème Frappuccino® Blended Crème</option>
+   <option value="Mocha Frappuccino® Blended Coffee" data-sugar="60">Mocha Frappuccino® Blended Coffee</option>
+   <option value="Cinnamon Dolce Frappuccino® Blended Coffee" data-sugar="64">Cinnamon Dolce Frappuccino® Blended Coffee</option>
+  </form>
+</select>
+
+            <form>
+                <h2>Tea</h2>
+
+                <select name="drink_tea" id="drink_tea">
+                        <option selected value="Choose One" data-sugar="0">Choose One</option>
+     <option value="Teavana® Shaken Iced Passion Tango™ Tea" data-sugar="8">Teavana® Shaken Iced Passion Tango™ Tea</option>
+     <option value="Teavana® Shaken Iced Green Tea" data-sugar="8">Teavana® Shaken Iced Green Tea</option>
+     <option value="Teavana® Shaken Iced Black Tea" data-sugar="8">Teavana® Shaken Iced Black Tea</option>
+     <option value="Teavana® Shaken Iced Peach Green Tea" data-sugar="15">Teavana® Shaken Iced Peach Green Tea</option>
+     <option value="Tazo® Bottled Berry Blossom White" data-sugar="15">Tazo® Bottled Berry Blossom White</option>
+     <option value="Tazo® Bottled Organic Iced Black Tea" data-sugar="15">Tazo® Bottled Organic Iced Black Tea</option>
+     <option value="Teavana® Shaken Iced Green Tea Lemonade" data-sugar="15">Teavana® Shaken Iced Green Tea Lemonade</option>
+     <option value="Teavana® Shaken Iced Black Tea Lemonade" data-sugar="17">Teavana® Shaken Iced Black Tea Lemonade</option>
+     <option value="Tazo® Bottled Iced Passion" data-sugar="17">Tazo® Bottled Iced Passion</option>
+     <option value="Shaken Sweet Tea" data-sugar="17">Shaken Sweet Tea</option>
+     <option value="Teavana® Shaken Iced Passion Tango™ Tea Lemonade" data-sugar="19">Teavana® Shaken Iced Passion Tango™ Tea Lemonade</option>
+     <option value="Tazo® Bottled Organic Iced Green Tea" data-sugar="24">Tazo® Bottled Organic Iced Green Tea</option>
+     <option value="Tazo® Bottled Lemon Ginger" data-sugar="31">Tazo® Bottled Lemon Ginger</option>
+     <option value="Tazo® Bottled White Cranberry" data-sugar="31">Tazo® Bottled White Cranberry</option>
+     <option value="Tazo® Bottled Organic Black Lemonade" data-sugar="35">Tazo® Bottled Organic Black Lemonade</option>
+     <option value="Tazo® Bottled Plum Pomegranate" data-sugar="35">Tazo® Bottled Plum Pomegranate</option>
+     <option value="Tazo® Bottled Brambleberry" data-sugar="35">Tazo® Bottled Brambleberry</option>
+     <option value="Tazo® Bottled Black with Lemon" data-sugar="35">Tazo® Bottled Black with Lemon</option>
+     <option value="Tazo® Bottled Giant Peach" data-sugar="37">Tazo® Bottled Giant Peach</option>
+     <option value="Tazo® Bottled Black Mango" data-sugar="38">Tazo® Bottled Black Mango</option>
+     <option value="Tazo® Bottled Tazoberry" data-sugar="38">Tazo® Bottled Tazoberry</option>
+   </select>
+
+
+            </form>
+
+            <form>
+                <h2>Add Milk</h2>
+                <select name="drink_milk" id="drink_milk">
+                <option value="None" data-sugar="0">None</option>
+                 <option value="Almond Milk" data-sugar="1">Almond Milk</option>
+                 <option value="Coconut Milk" data-sugar="2">Coconut Milk</option>
+                 <option value="Non Fat Milk" data-sugar="3">Non Fat Milk</option>
+                 <option value="2% Milk" data-sugar="3">2% Milk</option>
+                <option value="Whole Milk" data-sugar="3">Whole Milk</option>
+                <option value="Soy Milk" data-sugar="4">Soy Milk</option>
+</select>
+            </form>
+
+            <form>
+                <h2>Add Sugar</h2>
+                <select name="drink_sugar" id="drink_sugar">
+                      <option value="Sugar" data-sugar="0" selected>None</option>
+                 <option value="Sugar" data-sugar="1">1</option>
+                 <option value="Sugar" data-sugar="10">2</option>
+                 <option value="Sugar" data-sugar="15">3</option>
+                 <option value="Sugar" data-sugar="20">4</option>
+                 <option value="Sugar" data-sugar="25">5</option>
+              </select>
+            </form>
+            <div class="button_radio">
+                <form>
+                    <input type="radio" name="gender" value="37.5" checked> Male
+                    <input type="radio" name="gender" value="25"> Female
+                </form>
+            </div>
+            <div class="button_compute">
+                <input id="compute" type="image" src="images/coffee.png" value="compute" />
+
+            </div>
+            <div id="response">
+                <span class="highlight"> </span>% of your daily total.
+            </div>
+    </div>
+
+    <blockquote>
+        <p>“A lot of people think of soda or energy drinks when they think of sugar, but they don’t realize sugar is everywhere,”</p>
+        <footer>
+            <cite>
+           Gina Cohen<br>
+           <em>Dietician</em><br>
+           New York, NY
+         </cite>
+        </footer>
+    </blockquote>
+    <div class="main-text">
+
+        <p>Cohen said consuming too much sugar could lead to many health problems including obesity, higher cholesterol and increased risk for disease.
+        </p>
+        <p>
+            “Please don’t tell me,” said Joslynn Cary, a Starbucks regular, when asked if she knows how much sugar is in her favorite drink, “I don’t want to know.”
+        </p>
+    </div>
+    <div class="decor"></div>
+
+    <!-- Note input type of **option** for pulldown -->
+    <!-- note the **selected** attribute which selects an option on load -->
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- Your javascript should be called here -->
+    </body>
+
+</html>
